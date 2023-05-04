@@ -111,3 +111,50 @@ footer a:hover {
 .post-text {
   flex: 1;
 }
+
+
+.post-buttons {
+  margin-top: 10px;
+}
+
+.post-button {
+  background-color: #789922;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.post-button:hover {
+  background-color: #5a7d15;
+}
+
+.post-video {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-right: 10px;
+}
+
+.post-content-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.post-content-item {
+  margin: 0;
+}
+
+.footer-email {
+  color: #FFF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-email:hover {
+  color: #FFF;
+}
