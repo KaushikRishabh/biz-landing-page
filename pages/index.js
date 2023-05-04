@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Post from './components/Post';
+import { AiOutlineTwitter } from "react-icons/ai";
+import { RiTelegramLine } from "react-icons/ri";
+import { FiExternalLink } from "react-icons/fi"
 
 export default function Home() {
 
@@ -16,16 +19,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <div className="container">
-          <h1>/biz/ - biz coin will flip bits-coin</h1>
-          <nav>
-            {/* <a href="#">Biz</a>
-            <a href="#">Tech</a>
-            <a href="#">Random</a> */}
-          </nav>
-        </div>
-      </header>
+          <header>
+              <div className="header-container">
+                <h1>/biz/ - biz coin will flip bits-coin</h1>
+                <div className="post-social-icons">
+                  <a href="https://twitter.com/bizcoin69" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineTwitter className="post-social-icon" />
+                  </a>
+                  <a href="https://t.me/biziness69" target="_blank" rel="noopener noreferrer">
+                    <RiTelegramLine className="post-social-icon" />
+                  </a>
+                </div>
+              </div>
+            </header>
+
 
               <main>
           <div className="container">
@@ -39,6 +46,7 @@ export default function Home() {
                 { text: 'Buy Now', onClick: () => console.log('Buy Now clicked') },
                 { text: 'View Chart', onClick: () => console.log('View Chart clicked') },
               ]}
+              externalLink="https://etherscan.io/token/0x39dfd50c197f9288d21a308758dbd080d2ae8128"
             />
             <Post
               title="Who is biz For?"

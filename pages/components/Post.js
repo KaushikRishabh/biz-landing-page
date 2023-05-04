@@ -1,4 +1,9 @@
-const Post = ({ title, content, image, video, timestamp, buttons }) => {
+// import { AiOutlineTwitter } from "react-icons/ai";
+// import { RiTelegramLine } from "react-icons/ri";
+import { FiExternalLink } from "react-icons/fi"
+
+
+const Post = ({ title, content, image, video, timestamp, buttons, externalLink }) => {
     // const formattedContent = { __html: content.replace(/\n/g, '<br />') };
 
     const buyToken = () => {
@@ -32,7 +37,14 @@ const Post = ({ title, content, image, video, timestamp, buttons }) => {
                     ))}
                 </ul>
                 ) : (
-                <p className="post-content">{content}</p>
+                <p className="post-content">
+                    {content} 
+                    {externalLink && 
+                    <a href={externalLink} target="_blank" rel="noopener noreferrer">
+                    <FiExternalLink className="external-link-icon" />
+                  </a>
+                  }
+                </p>
                 )}
             {buttons && (
           <div className="post-buttons">
@@ -56,6 +68,7 @@ const Post = ({ title, content, image, video, timestamp, buttons }) => {
               </button>
             </a>
             {/* ))} */}
+            
           </div>
         )}
           </div>
