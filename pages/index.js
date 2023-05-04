@@ -32,7 +32,7 @@ export default function Home() {
             <Post
               title="$biz Contract Address:"
               content="0x39dFD50C197f9288D21A308758DBd080d2Ae8128"
-              image="/sminem.jpg"
+              image="/vitabo.jpg"
               // video="/mp41.mp4"
               timestamp="05/04/2023"
               buttons={[
@@ -68,9 +68,9 @@ export default function Home() {
               timestamp="05/04/2023"
             />
              <Post
-              title="Post Title 5"
-              content="Sed et urna semper, blandit turpis a, convallis mauris."
-              image="/wojak.jpg"
+              title="Contact us (Email below)"
+              content="व्यवसायिक पूछताछ कृपया वरिष्ठ अधिकारी और सीईओ के मेल पते पर अग्रेषित करें:"
+              image="/jeet2.jpg"
               timestamp="05/04/2023"
             />
           </div>
